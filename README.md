@@ -64,7 +64,7 @@ Before installing BurpCraft, ensure the following:
    Open the **BurpCraft** tab in Burp Suite and explore its intuitive GUI designed to streamline your payload management.
 
 2. 🌐 **Fetch Ready-to-Use Payloads**  
-   Instantly pull security testing payloads from popular GitHub repositories with a single click.
+   Instantly pull security testing payloads from popular GitHub repository with a single click.
 
 3. ✏️ **Customize Your Payloads**  
    Tailor the fetched payloads to fit your specific testing scenarios. Add, edit, or tweak them as per your requirements.
